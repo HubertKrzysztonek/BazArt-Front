@@ -1,16 +1,12 @@
-import logo from "./logo.svg";
-import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-const App = () => {
+const UserProducts = () => {
   const [products, setProducts] = useState([]);
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-  const fetchProducts = () => {
+
+  const fetchProducts = (id) => {
     axios
-      .get("http://localhost:5120/api/product")
+      .get(`http://localhost:5120/api/product/user/${id}`)
       .then((res) => {
         console.log(res);
         setProducts(res.data);
@@ -21,17 +17,17 @@ const App = () => {
   };
   return (
     <>
-      <h1>API products</h1>
+      <h1>User products</h1>
+      
       <>
         {products.map((product) => (
-          <div>
-            {product.name}
-            {product.description}
-          </div>
+          <div>{product.name}</div>
         ))}
+        <button onClick={() => fetchProducts(1)}>Id = 1</button>
+      <button onClick={() => fetchProducts(2)}>Id = 2</button>
       </>
     </>
   );
 };
 
-export default App;
+export default UserProducts;
