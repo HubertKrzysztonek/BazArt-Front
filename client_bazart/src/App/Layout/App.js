@@ -18,7 +18,7 @@ const App = () => {
     <Routes>
       <Route path="/" element={<HomePage categories={categories} />} />
       <Route path="/event/:eventId" element={<EventPage />}></Route>
-      <Route path="/artistSite" element={<ArtistSite />}></Route>
+      <Route path="/user/:userId" element={<ArtistSite />}></Route>
     </Routes>
   );
 };
