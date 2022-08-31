@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\el-proyecte-grande-sprint-1-csharp-mateuszski"
+		}
+	],
+	"settings": {
+		"prettier.bracketSameLine": true
+	}
+}
