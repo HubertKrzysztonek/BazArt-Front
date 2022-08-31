@@ -1,10 +1,5 @@
 import { useMemo } from "react";
-import {
-  GoogleMap,
-  Marker,
-  MarkerF,
-  useLoadScript,
-} from "@react-google-maps/api";
+import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 
 export default function EventLocationMap() {
   const { isLoaded } = useLoadScript({
@@ -19,7 +14,7 @@ function Map() {
   const center = useMemo(() => ({ lat: 44, lng: -80 }), []);
 
   return (
-    <GoogleMap zoom={10} center={center} mapContainerClassName="map-container">
+    <GoogleMap zoom={15} center={center} mapContainerClassName="map-container">
       <MarkerF position={center} />
     </GoogleMap>
   );
