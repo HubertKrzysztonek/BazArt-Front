@@ -14,6 +14,7 @@ const App = () => {
   return (
     <Routes>
       <Route path="/" element={<HomePage categories={categories} />} />
+      <Route path="/event/:eventId" element={<EventPage />}></Route>
     </Routes>
   );
 };
