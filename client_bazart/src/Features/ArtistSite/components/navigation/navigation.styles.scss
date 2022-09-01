@@ -1,0 +1,55 @@
+.navigation {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4vh;
+    padding-bottom: 10vh;
+  
+    .logo-container {
+      width: 30vh;
+      height: 12vh;
+      padding: 15px;
+
+      .logo{
+        width: 15vw;
+        height: 12vh;
+        padding: 15px;
+      }
+    }
+  
+    .nav-links-container {
+      width: 10vw;
+      height: 12vh;
+      padding: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+      .nav-link {
+        cursor: pointer;
+        
+        
+
+        .lupa {
+          height: 8vh;
+          width: 8vw;
+          padding: 2vh 2vw 2vh 2vw;
+        }
+        .favourite{
+          height: 8vh;
+          width: 8vw;
+          padding: 2vh 2vw 2vh 2vw;
+        }
+        .shoppingcart{
+          height: 8vh;
+          width: 8vw;
+          padding: 2vh 2vw 2vh 2vw;
+        }
+        .menu{
+          height: 8vh;
+          width: 8vw;
+          padding: 2vh 2vw 2vh 2vw;
+        }
+}
+  }
