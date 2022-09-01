@@ -1,0 +1,32 @@
+.event-image {
+    width: 16vw;
+    height: auto;
+    background-color: wheat;
+   
+}
+
+.cover20 {
+    width: 20vw;
+    border: 1vw wheat groove;
+    background-color: whitesmoke;
+}
+
+.cover40 {
+    width: 40vw;
+    border: 1vw wheat groove;
+    background-color: whitesmoke;
+}
+
+.event-description {
+    padding: 2vh;
+    background-color: whitesmoke;
+}
+
+.event-advert {
+    padding: 2vh;
+    background-color: whitesmoke;
+}
+
+h1 {
+    padding: 2vh 2vw 2vh 2vw;
+}

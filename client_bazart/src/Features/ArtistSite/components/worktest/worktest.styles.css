@@ -1,0 +1,16 @@
+.artist-work-container {
+    width:100vw;
+}
+
+
+.MuiImageList-root.MuiImageList-standard.css-uym98a-MuiImageList-root {
+
+    width:auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
+
+ul.MuiImageList-root.MuiImageList-standard.css-uym98a-MuiImageList-root {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4px;
+}
