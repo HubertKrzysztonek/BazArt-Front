@@ -1,29 +1,32 @@
-.box {
-  background: wheat;
-  width: 100%;
+.box-footer {
+    background: whitesmoke;
+    width: 100%;
 }
 
-.container {
+.container-footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 100%;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  width: auto;
+.column-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    
 }
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(5vw, 15vw));
-  grid-gap: 5vw;
-  justify-items: center;
-  max-width: 100%;
-  padding: 0vh 10vw 0vh 10vw;
+.row-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 
+                            minmax(5vw, 15vw));
+    grid-gap: 5vw;
+    justify-items: center;
+    max-width: 100%;
+    padding:  0vh 10vw 0vh 10vw;
+
 }
 
 a {
@@ -38,9 +41,15 @@ a:hover {
   transition: 200ms ease-in;
 }
 
-.heading {
-  font-size: 24px;
-
+.heading-p {
+    font-size: 24px;
   margin-bottom: 40px;
   font-weight: bold;
+  color: black;
+  font-family: 'Rampart One', cursive;
+}
+
+.footer-a-artist {
+    color: goldenrod;
+    font-family: cursive;
 }

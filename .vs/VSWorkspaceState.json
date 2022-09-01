@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\client_bazart",
+    "\\client_bazart\\src",
+    "\\client_bazart\\src\\assets"
   ],
   "PreviewInSolutionExplorer": false
 }

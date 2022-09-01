@@ -1,7 +1,7 @@
-const EventHeaderName = () => {
+const EventHeaderName = ({ eventName }) => {
   return (
     <div className="event-header-div">
-      <h3>tytuł wydarzenia</h3>
+      <h3>{eventName}</h3>
     </div>
   );
 };

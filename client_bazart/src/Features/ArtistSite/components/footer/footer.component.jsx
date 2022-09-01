@@ -4,55 +4,55 @@ import React from "react";
 
 const Footer = () =>{
     return (
-        <div className='box'>
-            <div className='container'>
-            <div className='row'>
-                <div className='column'>
-                <p className='heading'>Pomoc</p>
-                <a href="#">Jak kupować?</a>
-                <a href="#">Jak sprzedawać?</a>
-                <a href="#">Jak żyć?</a>
+        <div className='box-footer'>
+            <div className='container-footer'>
+            <div className='row-footer'>
+                <div className='column-footer'>
+                <p className='heading-p'>Pomoc</p>
+                <a className='footer-a-artist' href="#">Jak kupować?</a>
+                <a className='footer-a-artist' href="#">Jak sprzedawać?</a>
+                <a className='footer-a-artist' href="#">Jak zyć?</a>
                 </div>
-                <div className='column'>
-                <p className='heading'>Mapa strony</p>
-                <a href="#">Home</a>
-                <a href="#">Wydarzenia</a>
-                <a href="#">Shopping</a>
-                <a href="#">Rada Nadzorcza</a>
+                <div className='column-footer'>
+                <p className='heading-p'>Mapa strony</p>
+                <a className='footer-a-artist' href="#">Home</a>
+                <a className='footer-a-artist' href="#">Wydarzenia</a>
+                <a className='footer-a-artist' href="#">Shopping</a>
+                <a className='footer-a-artist' href="#">Rada Nadzorcza</a>
                 </div>
-                <div className='column'>
-                <p className='heading'>Kontakt</p>
-                <a href="#">Tel: 012 3456 789</a>
-                <a href="#">E-mail: qwerty@uiop.asd</a>
-                <a href="#">Adres: Polska</a>
-                <a href="#">Fax: :D</a>
+                <div className='column-footer'>
+                <p className='heading-p'>Kontakt</p>
+                <a className='footer-a-artist' href="#">Tel: 012 3456 789</a>
+                <a className='footer-a-artist' href="#">E-mail: qwerty@uiop.asd</a>
+                <a className='footer-a-artist' href="#">Adres: Polska</a>
+                <a className='footer-a-artist' href="#">Fax: :D</a>
                 </div>
-                <div className='column'>
-                <p className='heading'>Social Media</p>
-                <a href="#">
+                <div className='column-footer'>
+                <p className='heading-p'>Social Media</p>
+                <a className='footer-a-artist' href="#">
                     <i className="fab fa-facebook-f">
-                    <span style={{ marginLeft: "10px" }}>
+                    <span className='footer-a-artist' style={{ marginLeft: "10px" }}>
                         Facebook
                     </span>
                     </i>
                 </a>
-                <a href="#">
+                <a className='footer-a-artist' href="#">
                     <i className="fab fa-instagram">
-                    <span style={{ marginLeft: "10px" }}>
+                    <span className='footer-a-artist' style={{ marginLeft: "10px" }}>
                         Instagram
                     </span>
                     </i>
                 </a>
-                <a href="#">
+                <a className='footer-a-artist' href="#">
                     <i className="fab fa-twitter">
-                    <span style={{ marginLeft: "10px" }}>
+                    <span className='footer-a-artist' style={{ marginLeft: "10px" }}>
                         Twitter
                     </span>
                     </i>
                 </a>
-                <a href="#">
+                <a className='footer-a-artist' href="#">
                     <i className="fab fa-youtube">
-                    <span style={{ marginLeft: "10px" }}>
+                    <span className='footer-a-artist' style={{ marginLeft: "10px" }}>
                         Youtube
                     </span>
                     </i>

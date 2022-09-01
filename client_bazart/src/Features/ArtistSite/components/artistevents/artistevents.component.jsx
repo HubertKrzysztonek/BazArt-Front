@@ -5,9 +5,10 @@ import './artistevents.styles.css';
 
 const ArtistEvents = () => {
     return (
+        
         <div>
             <div className='artist-event-title'>
-                <h1>MOJE WYDARZENIA:</h1>
+                <h1 className='artist-event-title-h1'>MOJE WYDARZENIA:</h1>
             </div>
 
             <div className="event-container">
