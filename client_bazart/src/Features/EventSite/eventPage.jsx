@@ -5,12 +5,12 @@ import NavigationMain from "../navigation-main/navigation.main.component";
 
 const EventPage = (props) => {
   const params = useParams();
-  console.log(params.eventId);
+  // console.log(params.eventId);
   return (
     <div id="eventPageDiv" className="">
       <NavigationMain />
       <BoxLogo />
-      <ContentDiv />
+      <ContentDiv eventId={params.eventId} />
     </div>
   );
 };

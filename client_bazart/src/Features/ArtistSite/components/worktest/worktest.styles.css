@@ -1,5 +1,6 @@
 .artist-work-container {
     width:100vw;
+    background-color: whitesmoke;
 }
 
 
@@ -13,4 +14,16 @@
 ul.MuiImageList-root.MuiImageList-standard.css-uym98a-MuiImageList-root {
     grid-template-columns: repeat(4, 1fr);
     gap: 4px;
+}
+
+.title-artistwork {
+    background-color: whitesmoke;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+    
+}
+
+.title-artistwork-h1 {
+    background-color: whitesmoke;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+    text-align: center;
 }

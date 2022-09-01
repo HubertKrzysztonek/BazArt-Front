@@ -8,9 +8,9 @@ import './navigation.styles.scss';
 
 const Navigation = () => {
   return (
-      <div className='navigation'>
-        <Link className='logo-container' to='/'>
-          <Logo className='logo' />
+      <div className='navigation-artist'>
+        <Link className='logo-container-artist' to='/'>
+          <Logo className='logo-nav-artist' />
         </Link>
         <div className='nav-links-container'>
           <Link className='nav-link' to='/search'>

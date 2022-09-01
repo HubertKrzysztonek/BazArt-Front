@@ -13,3 +13,14 @@ h1 {
     max-width: 100vw;
     box-sizing: border-box;
 }
+
+.artist-about-title-h1 {
+    background-color: whitesmoke;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.artist-about-description-p {
+    color: black;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+}

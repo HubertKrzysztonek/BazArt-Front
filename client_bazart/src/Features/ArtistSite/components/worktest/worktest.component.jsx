@@ -20,8 +20,8 @@ export default function WorkTest() {
         }, []);
 
   return (
-    <div className='title'>
-        <h1>Moje prace:</h1>
+    <div className='title-artistwork'>
+        <h1 className='title-artistwork-h1'>Moje prace:</h1>
     <div className='artist-work-container'>
     <ImageList sx={{ width: 500, height: 450 }} cols={4}>
       {itemData.map((item) => (
