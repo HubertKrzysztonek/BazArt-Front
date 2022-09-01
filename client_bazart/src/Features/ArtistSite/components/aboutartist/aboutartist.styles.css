@@ -1,0 +1,26 @@
+h1 {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.artist-about-description {
+    width: 100%;
+    min-height: 15vh;
+    border: 1vw wheat groove;
+    background-color: whitesmoke;
+}
+
+.about {
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+.artist-about-title-h1 {
+    background-color: whitesmoke;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.artist-about-description-p {
+    color: black;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+}

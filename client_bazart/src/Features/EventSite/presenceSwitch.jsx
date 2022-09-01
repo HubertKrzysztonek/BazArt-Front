@@ -5,7 +5,8 @@ const PresenceSwitch = () => {
         class="form-check-input"
         type="checkbox"
         value=""
-        id="flexCheckDefault"></input>
+        id="flexCheckDefault"
+      ></input>
       <label class="form-check-label" for="flexCheckDefault">
         Wezmę udział
       </label>

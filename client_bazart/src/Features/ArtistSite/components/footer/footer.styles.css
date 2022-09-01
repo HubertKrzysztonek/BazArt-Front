@@ -1,0 +1,57 @@
+.box-footer {
+    background: whitesmoke;
+    width: 100%;
+}
+
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.column-footer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: auto;
+    
+}
+
+.row-footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 
+                            minmax(5vw, 15vw));
+    grid-gap: 5vw;
+    justify-items: center;
+    max-width: 100%;
+    padding:  0vh 10vw 0vh 10vw;
+
+}
+
+a {
+    
+    margin-bottom: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+      color: black;
+      transition: 200ms ease-in;
+      
+}
+
+.heading-p {
+    font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: black;
+  font-family: 'Rampart One', cursive;
+}
+
+.footer-a-artist {
+    color: goldenrod;
+    font-family: cursive;
+}

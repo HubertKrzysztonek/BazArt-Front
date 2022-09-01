@@ -1,0 +1,28 @@
+
+.contact{
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+
+.artist-about-title {
+    max-width: 100vw;
+    background-color: whitesmoke;
+    
+}
+
+.artist-about-description {
+    max-width: 100vw;
+    
+}
+
+.p-contact {
+    color: black;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+}
+
+.artist-about-title-h1{
+    background-color: whitesmoke;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+    text-align: center;
+}

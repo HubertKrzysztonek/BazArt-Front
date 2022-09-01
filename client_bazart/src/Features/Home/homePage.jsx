@@ -1,9 +1,10 @@
 import CategoryDirectory from "../categoriesComponent/categories.component";
-import UserProducts from "../PersonalSite/productsByUserId";
+import HomeTop from "../home-page-top-components/homePageTopComponents";
 
 const HomePage = ({ categories }) => {
   return (
     <>
+      <HomeTop />
       <CategoryDirectory categories={categories} />
     </>
   );

@@ -1,0 +1,47 @@
+.event-image {
+    width: 16vw;
+    height: auto;
+    background-color: wheat;
+   
+}
+
+.cover20 {
+    width: 20vw;
+    border: 1vw wheat groove;
+    background-color: whitesmoke;
+}
+
+.cover40 {
+    width: 40vw;
+    border: 1vw wheat groove;
+    background-color: whitesmoke;
+}
+
+.event-description {
+    padding: 2vh;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+}
+
+.event-advert {
+    padding: 2vh;
+    background-color: whitesmoke;
+    color: black;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    padding: 2vh 2vw 2vh 2vw;
+}
+
+.artist-event-title {
+    background-color: whitesmoke;
+}
+
+
+.artist-event-title-h1{
+    background-color: whitesmoke;
+    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
