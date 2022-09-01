@@ -2,14 +2,17 @@ import './banner.styles.css';
 import profile from '../../../../assets/profile.jpg';
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
-const Banner = () => {
-    const [data, setData] = useState();
+const Banner = (props) => {
+    const [nick, setNick] = useState();
+    const par = useParams();
+
     useEffect(() => {
-        axios.get(`http://localhost:5120/api/product/1`)
+        axios.get(`http://localhost:5120/api/product/${par.userId}`)
         .then((response) => {
             console.log(response)
-            setData(response.data.name)});
+            setNick(response.data.name)});
         }, []);
     
     return (
@@ -19,7 +22,7 @@ const Banner = () => {
         </div>
 
         <div className='artist-nick'>
-            <h1>{data}</h1>
+            <h1>{nick}</h1>
         </div>
     </div>
     )
