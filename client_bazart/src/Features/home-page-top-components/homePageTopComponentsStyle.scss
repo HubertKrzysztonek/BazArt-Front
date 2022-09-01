@@ -1,0 +1,36 @@
+.slideShow {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideShow linear infinite 5s;
+  animation-duration: 30s;
+  animation-delay: 5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation-timing-function: linear;
+  background-image: url("http://picsum.photos/100");
+}
+
+@keyframes slideShow {
+  0% {
+    background-image: url("http://picsum.photos/200");
+  }
+  25% {
+    background-image: url("http://picsum.photos/300");
+  }
+
+  50% {
+    background-image: url("http://picsum.photos/400");
+  }
+  75% {
+    background-image: url("http://picsum.photos/500");
+  }
+  100% {
+    background-image: url("http://picsum.photos/600");
+  }
+}
