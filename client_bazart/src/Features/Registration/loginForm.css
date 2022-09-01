@@ -341,6 +341,7 @@ label {
 }
 .signup {
   margin-bottom: 150px;
+  height: 100vh;
 }
 
 .signup-content {

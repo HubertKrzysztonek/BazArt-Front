@@ -18,8 +18,9 @@ export default function EventLocationMap(props) {
   return <Map mapLat={mapLat} mapLng={mapLng} />;
 }
 
-function Map(props) {
-  const center = { lat: props.mapLat, lng: props.mapLng };
+function Map() {
+  //todo! przekazanie mapLat i mapLng nie dziala mapa
+  const center = { lat: 52, lng: 21 };
 
   return (
     <GoogleMap zoom={15} center={center} mapContainerClassName="map-container">

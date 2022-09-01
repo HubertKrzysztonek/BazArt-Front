@@ -6,7 +6,6 @@ const RedirectButtons = () => {
       <div className="loginSingleButtonContainer">
         <NavLink
           to="/login/login"
-          activeClassName="pageSwitcherItem-active"
           className="pageSwitcherItem"
         >
           Login
@@ -15,7 +14,6 @@ const RedirectButtons = () => {
       <div className="loginSingleButtonContainer">
         <NavLink
           to="/login/register"
-          activeClassName="pageSwitcherItem-active"
           className="pageSwitcherItem"
         >
           Register

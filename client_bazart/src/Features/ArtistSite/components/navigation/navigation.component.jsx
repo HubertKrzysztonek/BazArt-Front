@@ -1,32 +1,36 @@
-import { Link } from 'react-router-dom';
-import { ReactComponent as Logo } from '../../../../assets/logo.svg';
-import lupa from '../../../../assets/lupa.svg';
-import favourite from '../../../../assets/favourite.svg';
-import menu from '../../../../assets/menu.svg';
-import shoppingcart from '../../../../assets/shoppingcart.svg';
-import './navigation.styles.scss';
+import { Link } from "react-router-dom";
+import { ReactComponent as SearchItem } from "../../../../assets/lupa.svg";
+import { ReactComponent as FavouriteItem } from "../../../../assets/favourite.svg";
+import { ReactComponent as MenuItem } from "../../../../assets/menu.svg";
+import { ReactComponent as ShoppingCartItem } from "../../../../assets/shoppingcart.svg";
+import { ReactComponent as BazartLogo } from "../../../../assets/logo.svg";
+import "./navigation.styles.scss";
 
 const Navigation = () => {
   return (
-      <div className='navigation-artist'>
-        <Link className='logo-container-artist' to='/'>
-          <Logo className='logo-nav-artist' />
-        </Link>
-        <div className='nav-links-container'>
-          <Link className='nav-link' to='/search'>
-            <img class='lupa' src={lupa} alt='search'></img>
+    <>
+      <div className="navigation-artist">
+        <div className="logo-container-artist">
+          <Link className="nav-link" to="/">
+            <BazartLogo className="logo-artist" />
           </Link>
-          <Link className='nav-link' to='/favourite'>
-            <img class='favourite' src={favourite} alt='favourite'></img>
+        </div>
+        <div className="nav-links-container-artist">
+          <Link className="nav-link" to="/search">
+            <SearchItem className="lupa-artist" />
           </Link>
-          <Link className='nav-link' to='/sign-in'>
-          <img class='shoppingcart' src={shoppingcart} alt='shoppingcart'></img>
+          <Link className="nav-link" to="/favourite">
+            <FavouriteItem className="favourite-artist" />
           </Link>
-          <Link className='nav-link' to='/menu'>
-          <img class='menu' src={menu} alt='menu'></img>
+          <Link className="nav-link" to="/cart">
+            <ShoppingCartItem className="shoppingcart-artist" />
+          </Link>
+          <Link className="nav-link" to="/menu">
+            <MenuItem className="menu-artist" />
           </Link>
         </div>
       </div>
+    </>
   );
 };
 

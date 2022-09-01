@@ -9,43 +9,21 @@ const RegistrationForm = () => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <div class="main-login-page">
+      <div className="main-login-page">
         <RedirectButtons />
-        {/* <RedirectButtons /> */}
-        {/* <div className="container">
-        <form>
-          <h1>Login Form</h1>
-          <div className="ui divider"></div>
-          <div className="ui form">
-            <div className="field">
-              <label>Username</label>
-              <input type="text" name="username" placeholder="Username" />
-            </div>
-            <div className="field">
-              <label>Password</label>
-              <input type="password" name="password" placeholder="Password" />
-            </div>
-            <div className="field">
-              <label>Password</label>
-              <input type="password" name="password" placeholder="Password" />
-            </div>
-            <button className="fluid ui button blue">Submit</button>
-          </div>
-        </form>
-      </div> */}
 
-        <section class="sign-in">
-          <div class="sign-in-container">
-            <div class="signin-content">
-              <div class="signin-image">
+        <section className="sign-in">
+          <div className="sign-in-container">
+            <div className="signin-content">
+              <div className="signin-image">
                 <figure>
                   <img src={logo} alt="register logo" />
                 </figure>
               </div>
-              <div class="signin-form">
-                <h2 class="sing-in-form-title">Sign up</h2>
-                <form class="sign-form" id="login-form">
-                  <div class="form-group">
+              <div className="signin-form">
+                <h2 className="sing-in-form-title">Sign up</h2>
+                <form className="sign-form" id="login-form">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="your_name"
@@ -53,7 +31,7 @@ const RegistrationForm = () => {
                       placeholder="Your Name"
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="password"
                       name="your_pass"
@@ -62,12 +40,12 @@ const RegistrationForm = () => {
                     />
                   </div>
 
-                  <div class="form-group form-button">
+                  <div className="form-group form-button">
                     <input
                       type="submit"
                       name="signin"
                       id="signin"
-                      class="form-submit"
+                      className="form-submit"
                       value="Log in"
                     />
                   </div>

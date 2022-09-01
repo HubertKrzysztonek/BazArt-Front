@@ -31,13 +31,13 @@ const LoginForm = () => {
     >
       <RedirectButtons />
       <div className="main-login-page">
-        <section class="signup">
-          <div class="sign-in-container">
-            <div class="signup-content">
-              <div class="signup-form">
-                <h2 class="sing-in-form-title">Sign up</h2>
-                <form class="sign-form" id="register-form">
-                  <div class="form-group">
+        <section className="signup">
+          <div className="sign-in-container">
+            <div className="signup-content">
+              <div className="signup-form">
+                <h2 className="sing-in-form-title">Sign up</h2>
+                <form className="sign-form" id="register-form">
+                  <div className="form-group">
                     <input
                       type="text"
                       name="name"
@@ -45,7 +45,7 @@ const LoginForm = () => {
                       placeholder="Your Name"
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="email"
                       name="email"
@@ -53,7 +53,7 @@ const LoginForm = () => {
                       placeholder="Your Email"
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="password"
                       name="pass"
@@ -61,7 +61,7 @@ const LoginForm = () => {
                       placeholder="Password"
                     />
                   </div>
-                  <div class="form-group">
+                  <div className="form-group">
                     <input
                       type="password"
                       name="re_pass"
@@ -70,18 +70,18 @@ const LoginForm = () => {
                     />
                   </div>
 
-                  <div class="form-group form-button">
+                  <div className="form-group form-button">
                     <input
                       type="submit"
                       name="signup"
                       id="signup"
-                      class="form-submit"
+                      className="form-submit"
                       value="Register"
                     />
                   </div>
                 </form>
               </div>
-              <div class="signup-image">
+              <div className="signup-image">
                 <figure>
                   <img src={logo} />
                 </figure>
