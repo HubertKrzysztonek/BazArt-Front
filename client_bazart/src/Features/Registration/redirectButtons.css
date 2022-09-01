@@ -8,9 +8,19 @@
   outline: none;
   display: inline-block;
   text-decoration: none;
+  border-radius: 5px;
 }
 
 .pageSwitcherItem-active {
   background-color: #6b5b95;
   color: white;
+}
+.loginButtonContainer {
+  padding: 20px;
+  float: left;
+}
+.loginSingleButtonContainer {
+  width: 50%;
+  float: none;
+  padding: 20px;
 }
