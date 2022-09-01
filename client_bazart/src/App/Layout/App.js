@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import "./App.css";
 import ArtistSite from "../../Features/ArtistSite/artistSite";
 import EventPage from "../../Features/EventSite/eventPage";
+import NavigationMain from "../../Features/navigation-main/navigation.main.component";
 
 const App = () => {
   const [categories, setCategory] = useState([]);
@@ -16,9 +17,14 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="/" element={<HomePage categories={categories} />} />
+      <Route path="/" element={<NavigationMain />}>
+        <Route index element={<HomePage categories={categories} />} />
+      </Route>
       <Route path="/event/:eventId" element={<EventPage />}></Route>
-      <Route path="/user/:userId" element={<ArtistSite />}></Route>
+      <Route path="/artistSite" element={<ArtistSite />}></Route>
+      <Route path="/login" element={<Registration />}></Route>
+      <Route path="/login/login" element={<LoginForm />}></Route>
+      <Route path="/login/register" element={<RegistrationForm />}></Route>
     </Routes>
   );
 };
