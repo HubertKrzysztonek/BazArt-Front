@@ -1,17 +1,18 @@
-.navigation {
+.navigation-artist {
   height: 70px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 4vh;
   padding-bottom: 10vh;
+  background-color: whitesmoke;
 
-  .logo-container {
+  .logo-container-artist {
     width: 30vh;
     height: 12vh;
     padding: 15px;
 
-    .logo {
+    .logo-nav-artist {
       width: 15vw;
       height: 12vh;
       padding: 15px;

@@ -1,16 +1,16 @@
-.box {
-    background: wheat;
+.box-footer {
+    background: whitesmoke;
     width: 100%;
 }
 
-.container {
+.container-footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
 }
 
-.column {
+.column-footer{
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -18,7 +18,7 @@
     
 }
 
-.row {
+.row-footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, 
                             minmax(5vw, 15vw));
@@ -43,9 +43,15 @@ a:hover {
       
 }
 
-.heading {
+.heading-p {
     font-size: 24px;
-  
   margin-bottom: 40px;
   font-weight: bold;
+  color: black;
+  font-family: 'Rampart One', cursive;
+}
+
+.footer-a-artist {
+    color: goldenrod;
+    font-family: cursive;
 }

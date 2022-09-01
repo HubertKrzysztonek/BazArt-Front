@@ -2,12 +2,7 @@
     box-sizing: border-box;
   }
   
-  body {
-    background-color: whitesmoke;
-    opacity: 0.85;
-    font-family: 'Rampart One', Arial, Helvetica, sans-serif;
-    max-width: 100%;
-  }
+
   
   /* Float four columns side by side */
   .column {
@@ -20,7 +15,8 @@
   /* Remove extra left and right margins, due to padding in columns */
   .artist-work-container {
     margin: 2vw -5px;
-  max-width: 100%;
+    max-width: 100%;
+    background-color: whitesmoke;
 }
   
   /* Clear floats after the columns */
@@ -28,6 +24,7 @@
     content: "";
     display: table;
     clear: both;
+    background-color: whitesmoke;
   }
   
   /* Style the counter cards */
