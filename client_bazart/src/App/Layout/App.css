@@ -52,8 +52,9 @@
   /* object-fit: contain; */
 }
 .map-container {
-  width: 100%;
-  height: 100vh;
+  width: 80%;
+  height: 50vh;
+  margin-left: 10%;
 }
 
 #event-image-id {
@@ -95,4 +96,9 @@
 
 .adress-div {
   background-color: darkgoldenrod;
+  align-items: center;
+}
+
+.event-map-header {
+  margin-left: 10%;
 }

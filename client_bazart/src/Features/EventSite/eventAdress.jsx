@@ -1,10 +1,13 @@
 import EventLocationMap from "./eventLocationMap";
+import EventMapHeader from "./eventMapHeader";
 
-const EventAdress = () => {
+const EventAdress = ({ mapLat, mapLng }) => {
+  console.log(`to jest lat ${mapLat} a to lng ${mapLng}`);
+
   return (
     <div class="adress-div">
-      <h5>Miejsce wydarzenia</h5>
-      <EventLocationMap />
+      <EventMapHeader />
+      <EventLocationMap mLat={mapLat} mLng={mapLng} />
     </div>
   );
 };

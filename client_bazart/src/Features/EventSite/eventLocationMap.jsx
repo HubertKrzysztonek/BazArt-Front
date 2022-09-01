@@ -1,17 +1,25 @@
 import { useMemo } from "react";
 import { GoogleMap, MarkerF, useLoadScript } from "@react-google-maps/api";
 
-export default function EventLocationMap() {
+let mapLat = 20.11;
+let mapLng = -10;
+
+export default function EventLocationMap(props) {
+  mapLat = props.mLat;
+  mapLng = props.mLng;
+  // console.log(typeof mapLat);
+  // console.log(typeof 44);
+
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: "AIzaSyA-SntA_2_IzdI2qFOMRUU7Xr3516LNaTg",
   });
 
   if (!isLoaded) return <div>Loading...</div>;
-  return <Map />;
+  return <Map mapLat={mapLat} mapLng={mapLng} />;
 }
 
-function Map() {
-  const center = useMemo(() => ({ lat: 44, lng: -80 }), []);
+function Map(props) {
+  const center = { lat: props.mapLat, lng: props.mapLng };
 
   return (
     <GoogleMap zoom={15} center={center} mapContainerClassName="map-container">

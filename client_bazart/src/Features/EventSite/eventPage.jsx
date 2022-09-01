@@ -4,12 +4,12 @@ import ContentDiv from "./contentDiv";
 
 const EventPage = (props) => {
   const params = useParams();
-  console.log(params.eventId);
+  // console.log(params.eventId);
   return (
     <div id="eventPageDiv" className="">
       <h1>Event Page id-{params.eventId}</h1>
       <BoxLogo />
-      <ContentDiv />
+      <ContentDiv eventId={params.eventId} />
     </div>
   );
 };

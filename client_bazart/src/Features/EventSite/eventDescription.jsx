@@ -1,12 +1,8 @@
-const EventDescriptionDiv = () => {
+const EventDescriptionDiv = ({ description }) => {
   return (
     <div className="description-div">
-      <h3>Opis wydarzenia</h3>
-      <p>
-        Opis jakis tamOpis jakis tam Opis jakis tam Opis jakis tam Opis jakis
-        tam Opis jakis tam Opis jakis tam Opis jakis tam Opis jakis tam Opis
-        jakis tam Opis jakis tam
-      </p>
+      <h3 id="h3-description">Opis wydarzenia</h3>
+      <p>{description}</p>
     </div>
   );
 };
