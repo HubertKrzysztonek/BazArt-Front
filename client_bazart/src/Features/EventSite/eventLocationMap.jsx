@@ -18,9 +18,8 @@ export default function EventLocationMap(props) {
   return <Map mapLat={mapLat} mapLng={mapLng} />;
 }
 
-function Map() {
-  //todo! przekazanie mapLat i mapLng nie dziala mapa
-  const center = { lat: 52, lng: 21 };
+function Map(props) {
+  const center = { lat: props.mapLat, lng: props.mapLng };
 
   return (
     <GoogleMap zoom={15} center={center} mapContainerClassName="map-container">
@@ -28,7 +27,6 @@ function Map() {
     </GoogleMap>
   );
 }
-
 // export default EventLocationMap;
 
 // import { Map, GoogleApiWrapper } from "google-maps-react";
