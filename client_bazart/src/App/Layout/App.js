@@ -19,7 +19,7 @@ const App = () => {
   }, []);
   const location = useLocation();
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence wait>
       <Routes location={location} key={location.pathname}>
         <Route path="/" element={<NavigationMain />}>
           <Route index element={<HomePage categories={categories} />} />

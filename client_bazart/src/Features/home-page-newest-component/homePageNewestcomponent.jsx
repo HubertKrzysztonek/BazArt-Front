@@ -8,6 +8,7 @@ const HomeNewest = () => {
   const productContainers = [
     ...document.querySelectorAll(".product-container"),
   ];
+
   const preBtn = [...document.querySelectorAll(".pre-btn")];
   const nxtBtn = [...document.querySelectorAll(".nxt-btn")];
   productContainers.forEach((item, i) => {
@@ -22,6 +23,7 @@ const HomeNewest = () => {
       item.scrollLeft -= containerWidth;
     });
   });
+
 
   return (
     <section className="product-slider">

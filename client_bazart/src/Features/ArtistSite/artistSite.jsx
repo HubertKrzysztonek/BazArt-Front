@@ -10,18 +10,18 @@ import WorkTest from "./components/worktest/worktest.component";
 
 const ArtistSite = (props) => {
   const par = useParams();
-    return (
-        <div>
-            <Navigation />
-            <Banner />
-            {/* <ArtistWork /> */}
-            <WorkTest /> 
-            <ArtistEvents />
-            <AboutArtist /> 
-            <ArtistContact />  
-            <Footer />
-        </div>
-  )
+  return (
+    <div>
+      <Navigation />
+      <Banner />
+      {/* <ArtistWork /> */}
+      <WorkTest />
+      <ArtistEvents />
+      <AboutArtist />
+      <ArtistContact />
+      <Footer />
+    </div>
+  );
 };
-  
-  export default ArtistSite;
+
+export default ArtistSite;

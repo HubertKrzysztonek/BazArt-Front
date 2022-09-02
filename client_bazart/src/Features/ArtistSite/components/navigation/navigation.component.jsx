@@ -11,7 +11,7 @@ const Navigation = () => {
     <>
       <div className="navigation-artist">
         <div className="logo-container-artist">
-          <Link className="nav-link" to="/">
+          <Link className="nav-link" to="/" onClick={() => window.reload()}>
             <BazartLogo className="logo-artist" />
           </Link>
         </div>
