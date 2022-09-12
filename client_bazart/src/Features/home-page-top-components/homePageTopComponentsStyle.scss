@@ -13,24 +13,24 @@
   align-items: center;
 
   animation-timing-function: linear;
-  background-image: url("../../assets/pic5.jpg");
+  background-image: url("https://source.unsplash.com/random");
 }
 
 @keyframes slideShow {
   0% {
-    background-image: url("../../assets/pic2.jpg");
+    background-image: url("https://source.unsplash.com/random/1");
   }
   25% {
-    background-image: url("../../assets/pic3.jpg");
+    background-image: url("https://source.unsplash.com/random/2");
   }
 
   50% {
-    background-image: url("../../assets/pic4.jpg");
+    background-image: url("https://source.unsplash.com/random/3");
   }
   75% {
-    background-image: url("../../assets/pic1.jpg");
+    background-image: url("https://source.unsplash.com/random/4");
   }
   100% {
-    background-image: url("../../assets/pic6.jpg");
+    background-image: url("https://source.unsplash.com/random/5");
   }
 }

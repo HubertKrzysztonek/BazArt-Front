@@ -24,7 +24,6 @@ const HomeNewest = () => {
     });
   });
 
-
   return (
     <section className="product-slider">
       <h1 className="product-category">Najnowsze</h1>
@@ -39,7 +38,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=1"
               className="product-thumb"
               alt=""
             />
@@ -58,7 +57,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=2"
               className="product-thumb"
               alt=""
             />
@@ -77,7 +76,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=3"
               className="product-thumb"
               alt=""
             />
@@ -96,7 +95,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=4"
               className="product-thumb"
               alt=""
             />
@@ -115,7 +114,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=5"
               className="product-thumb"
               alt=""
             />
@@ -134,7 +133,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=6"
               className="product-thumb"
               alt=""
             />
@@ -153,7 +152,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=7"
               className="product-thumb"
               alt=""
             />
@@ -172,7 +171,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=8"
               className="product-thumb"
               alt=""
             />
@@ -191,7 +190,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=9"
               className="product-thumb"
               alt=""
             />
@@ -210,7 +209,7 @@ const HomeNewest = () => {
           <div className="product-image">
             <span className="discount-tag">50% off</span>
             <img
-              src="http://picsum.photos/300"
+              src="https://source.unsplash.com/random/800x800/?img=10"
               className="product-thumb"
               alt=""
             />
