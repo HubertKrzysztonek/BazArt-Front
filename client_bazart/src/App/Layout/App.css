@@ -41,7 +41,8 @@
   width: 80%;
   height: 300px;
   margin-left: 10%;
-  background-color: red;
+  background-color: gray;
+  border-radius: 30px 30px 0px 0px;
 }
 
 #logo {
@@ -69,10 +70,11 @@
 .content-div {
   width: 80%;
   margin-left: 10%;
-  background-color: aquamarine;
+  background-color: grey;
 }
 .eventPageDiv {
-  background-color: blueviolet;
+  background-color: gray;
+  border-radius: 25px;
 }
 
 .description-div {
@@ -87,21 +89,30 @@
   display: inline-block;
 }
 
+#event-check{
+  margin-left: 45%;
+}
+
 .form-check {
   width: 30%;
+  text-align: center;
   display: inline-block;
   margin-left: 10%;
   margin-right: 10%;
+  background-color: grey;
 }
 
 .adress-div {
-  background-color: darkgoldenrod;
+  background-color: grey;
   align-items: center;
 }
 
 .event-map-header {
   margin-left: 10%;
 }
+
+
+
 
 
 #root {

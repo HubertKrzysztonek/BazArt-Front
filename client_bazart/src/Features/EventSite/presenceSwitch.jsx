@@ -1,19 +1,15 @@
 const PresenceSwitch = () => {
   return (
     <div className="form-check">
-      <input
+       <h4>Wezmę udział</h4>
+       <input id="event-check"
         className="form-check-input"
         type="checkbox"
         value=""
-        id="flexCheckDefault"
-      ></input>
-      <label className="form-check-label" htmlFor="flexCheckDefault">
-        Wezmę udział
-      </label>
+      ></input>        
     </div>
   );
 };
 
 export default PresenceSwitch;
 
-// dodac bootsrap
