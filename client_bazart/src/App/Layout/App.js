@@ -8,6 +8,7 @@ import NavigationMain from "../../Features/navigation-main/navigation.main.compo
 import Registration from "./../../Features/Registration/registration";
 import LoginForm from "./../../Features/Registration/loginForm";
 import RegistrationForm from "./../../Features/Registration/registrationForm";
+import Register from "../../Features/RegistrationForm/Register";
 import { AnimatePresence } from "framer-motion";
 const App = () => {
   const [categories, setCategory] = useState([]);
@@ -29,6 +30,7 @@ const App = () => {
         <Route path="/login" element={<Registration />}></Route>
         <Route path="/login/login" element={<LoginForm />}></Route>
         <Route path="/login/register" element={<RegistrationForm />}></Route>
+        <Route path="/registertest" element={<Register />}></Route>
       </Routes>
     </AnimatePresence>
   );
