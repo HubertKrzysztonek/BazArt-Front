@@ -23,7 +23,9 @@ export default function FooterModal(title) {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Contact us</Button>
+      <a className="contact-button" onClick={handleOpen}>
+        <MDBIcon fas icon="at" /> DEVELOPER EMAILS{" "}
+      </a>
       <Modal
         open={open}
         onClose={handleClose}

@@ -1,0 +1,13 @@
+.text-uppercase {
+  border-bottom: 2px solid black;
+  padding-bottom: 5px;
+}
+
+.contact-button {
+  color: black;
+  cursor: pointer;
+}
+.pomoc {
+  text-align: left;
+  margin-left: 30%;
+}

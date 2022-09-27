@@ -8,85 +8,59 @@ import {
   MDBBtn,
 } from "mdb-react-ui-kit";
 import FooterModal from "./FooterModal";
-
-const Footer = (props) => {
+import "./Footer.css";
+const Footer = () => {
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-left">
-      <div className="text-uppercase">SOCIAL MEDIA</div>
-      <div>
-        <MDBBtn
-          floating
-          className="m-1"
-          style={{ backgroundColor: "#3b5998" }}
-          href="#!"
-          role="button"
-        >
-          <MDBIcon fab icon="facebook-f" />
-        </MDBBtn>
-
-        <MDBBtn
-          floating
-          className="m-1"
-          style={{ backgroundColor: "#55acee" }}
-          href="#!"
-          role="button"
-        >
-          <MDBIcon fab icon="twitter" />
-        </MDBBtn>
-
-        <MDBBtn
-          floating
-          className="m-1"
-          style={{ backgroundColor: "#dd4b39" }}
-          href="#!"
-          role="button"
-        >
-          <MDBIcon fab icon="google" />
-        </MDBBtn>
-        <MDBBtn
-          floating
-          className="m-1"
-          style={{ backgroundColor: "#ac2bac" }}
-          href="#!"
-          role="button"
-        >
-          <MDBIcon fab icon="instagram" />
-        </MDBBtn>
-
-        {/* <MDBBtn
-            floating
-            className="m-1"
-            style={{ backgroundColor: "#0082ca" }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="linkedin-in" />
-          </MDBBtn> */}
-
-        {/* <MDBBtn
-            floating
-            className="m-1"
-            style={{ backgroundColor: "#333333" }}
-            href="#!"
-            role="button"
-          >
-            <MDBIcon fab icon="github" />
-          </MDBBtn> */}
-      </div>
-      <MDBContainer className="p-4">
+      <MDBContainer className="p-3">
         <MDBRow>
-          <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
-            <h5 className="text-uppercase">BAZART</h5>
+          <MDBCol lg="3" md="12" className="mb-4 mb-md-0">
+            <h5 className="text-uppercase">Pomoc</h5>
+            <p className="pomoc">Jak kupować</p>
+            <p className="pomoc">Jak sprzedawać</p>
+          </MDBCol>
 
+          <MDBCol lg="3" md="12" className="mb-4 mb-md-0">
+            <h5 className="text-uppercase">Mapa strony</h5>
             <p>
               Art is, only because an artist executed an idea into a reality.
               Come join the bazart society and share your work with others.
             </p>
           </MDBCol>
-
-          <MDBCol lg="6" md="12" className="mb-4 mb-md-0">
-            <h5 className="text-uppercase">USEFULL LINKS</h5>
-            <FooterModal title={props.title} />
+          <MDBCol lg="3" md="12" className="mb-4 mb-md-0">
+            <h5 className="text-uppercase">Kontakt</h5>
+            <MDBIcon fas icon="phone-alt" /> +48 555-555-555
+            <FooterModal />
+          </MDBCol>
+          <MDBCol lg="3" md="12" className="mb-4 mb-md-0">
+            <h5 className="text-uppercase">Social media</h5>
+            <MDBBtn
+              floating
+              className="m-1"
+              style={{ backgroundColor: "#3b5998" }}
+              href="#!"
+              role="button"
+            >
+              <MDBIcon fab icon="facebook-f" />
+            </MDBBtn>
+            <MDBBtn
+              floating
+              className="m-1"
+              style={{ backgroundColor: "#55acee" }}
+              href="#!"
+              role="button"
+            >
+              <MDBIcon fab icon="twitter" />
+            </MDBBtn>
+            <MDBBtn
+              floating
+              className="m-1"
+              style={{ backgroundColor: "#ac2bac" }}
+              href="#!"
+              role="button"
+            >
+              <MDBIcon fab icon="instagram" />
+            </MDBBtn>{" "}
           </MDBCol>
         </MDBRow>
       </MDBContainer>
@@ -95,9 +69,9 @@ const Footer = (props) => {
         className="text-center p-3"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
       >
-        &copy; {new Date().getFullYear()} Copyright:{" "}
-        <a className="text-dark" href="http://localhost:3000/">
-          bazART
+        Copyrights &copy; {new Date().getFullYear()}{" "}
+        <a className="text-center p-3" href="http://localhost:3000/">
+          All Rights Reserved Company Name.
         </a>
       </div>
     </MDBFooter>
