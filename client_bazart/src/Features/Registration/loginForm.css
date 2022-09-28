@@ -1,4 +1,4 @@
-input,
+/* input,
 select,
 textarea {
   outline: none;
@@ -276,7 +276,7 @@ label {
     margin-left: 0px;
     margin-right: 0px;
     padding-left: 0px;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
     padding: 0 30px;
   }
 
@@ -377,4 +377,4 @@ label {
   margin-left: 75px;
   margin-right: 75px;
   padding-left: 34px;
-}
+} */
