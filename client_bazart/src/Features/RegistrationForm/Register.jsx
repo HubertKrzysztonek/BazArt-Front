@@ -28,7 +28,7 @@ const Register = () => {
     console.warn(email, password);
     fetch("http://localhost:5120/api/authentication/login/Cookie", {
       method: "POST",
-      credentials: "same-origin",
+      credentials: "include",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
