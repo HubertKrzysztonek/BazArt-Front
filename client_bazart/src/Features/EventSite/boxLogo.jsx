@@ -1,4 +1,4 @@
-import logo from "../images/logob.jpg";
+import logo from "../images/logo.svg";
 
 const BoxLogo = () => {
   console.log(logo);

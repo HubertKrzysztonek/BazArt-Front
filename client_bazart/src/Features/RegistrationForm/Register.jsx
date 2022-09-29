@@ -56,7 +56,7 @@ const Register = () => {
         <div className="form-button">
           <div className="login-form-text">Masz już u nas konto ? </div>
           <br />
-          <a className="login-button" href="/registertest">
+          <a className="login-button" href="/login">
             ZALOGUJ SIE!
           </a>
         </div>
@@ -65,7 +65,7 @@ const Register = () => {
             Jesteś artystą? Interesujesz się sztuką? A może wbijasz na zakupy?
           </div>
           <br />
-          <a className="login-button" href="/login/register">
+          <a className="login-button" href="/">
             ZAREJESTRUJ SIE !
           </a>
         </div>

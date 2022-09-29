@@ -3,6 +3,7 @@ import BoxLogo from "./boxLogo";
 import ContentDiv from "./contentDiv";
 import NavigationMain from "../navigation-main/navigation.main.component";
 import Footer from "../Footer/Footer";
+import "./event.css";
 
 const EventPage = (props) => {
   const params = useParams();

@@ -22,9 +22,10 @@ const ContentDiv = ({ eventId }) => {
   return (
     <div className="content-div">
       <EventHeaderName eventName={event.name} />
-      <PresenceSwitch />
+
       <EventImage imgName={event.imageUrl} />
       <EventDescriptionDiv description={event.description} />
+      <PresenceSwitch />
       <EventAdress mapLng={event.mapLng} mapLat={event.mapLat} />
     </div>
   );

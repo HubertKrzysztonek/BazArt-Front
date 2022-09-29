@@ -26,7 +26,7 @@ const App = () => {
         <Route path="/event/:eventId" element={<EventPage />}></Route>
         <Route path="/user/:userId" element={<ArtistSite />}></Route>
 
-        <Route path="/registertest" element={<Register />}></Route>
+        <Route path="/login" element={<Register />}></Route>
       </Routes>
     </AnimatePresence>
   );
