@@ -10,7 +10,9 @@ const ContentDiv = ({ eventId }) => {
   const [event, setEvent] = useState([]);
 
   useEffect(() => {
-    fetch(`http://localhost:5120/api/event/${eventId}`)
+    fetch(`http://localhost:5120/api/event/${eventId}`, {
+      credentials: "include",
+    })
       .then((response) => response.json())
       .then((data) => setEvent(data));
   }, []);

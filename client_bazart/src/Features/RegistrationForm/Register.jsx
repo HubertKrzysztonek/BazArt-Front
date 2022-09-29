@@ -1,104 +1,101 @@
-import { useRef, useState, useEffect } from "react";
-import {
-  faCheck,
-  faTimes,
-  faInfoCircle,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import styles from "../RegistrationForm/Register.module.css";
-
-const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/;
-const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8-24}$/;
-
+import "./Register.css";
+import { useState } from "react";
 const Register = () => {
-  const userRef = useRef();
-  const errRef = useRef();
-
-  const [user, setUser] = useState("");
-  const [validName, setValidName] = useState(false);
-  const [userFocus, setUserFocus] = useState(false);
-
-  const [pwd, setPwd] = useState("");
-  const [validPwd, setValidPwd] = useState(false);
-  const [pwdFocus, setPwdFocus] = useState(false);
-
-  const [matchPwd, setMatchPwd] = useState("");
-  const [validMatch, setValidMatch] = useState(false);
-  const [matchFocus, setMatchFocus] = useState(false);
-
-  const [errMsg, setErrMsg] = useState("");
-  const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    userRef.current.focus();
-  }, []);
-
-  useEffect(() => {
-    const result = USER_REGEX.test(user);
-    console.log(result);
-    console.log(user);
-    setValidName(result);
-  }, [user]);
-
-  useEffect(() => {
-    const result = PWD_REGEX.test(pwd);
-    console.log(result);
-    console.log(pwd);
-    setValidPwd(result);
-    const match = pwd === matchPwd;
-    setValidMatch(match);
-  }, [pwd, matchPwd]);
-
-  useEffect(() => {
-    setErrMsg("");
-  }, [user, pwd, matchPwd]);
-
+  // fetch("https://apiendpoint.com/login", {
+  //   method: "GET",
+  //   credentials: "include",
+  //   headers: {
+  //     Accept: "application/json",
+  //     "Content-Type": "application/json",
+  //     Authorization:
+  //       "Basic " + btoa(inst.user.email + ":" + inst.user.password),
+  //   },
+  // })
+  //   .then(function (response) {
+  //     if (response.status !== 200) {
+  //       console.log(
+  //         "Looks like there was a problem. Status Code: " + response.status
+  //       );
+  //       return;
+  //     }
+  //   })
+  //   .catch(function (err) {
+  //     console.log("Fetch Error :-S", err);
+  //   });
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  function clickLogin() {
+    console.warn(email, password);
+    fetch("http://localhost:5120/api/authentication/login/Cookie", {
+      method: "POST",
+      credentials: "include",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        email: email,
+        password: password,
+      }),
+    })
+      .then(function (response) {
+        if (response.status !== 200) {
+          console.log(
+            "Looks like there was a problem. Status Code: " + response.status
+          );
+          return;
+        }
+      })
+      .catch(function (err) {
+        console.log("Fetch Error :-S", err);
+      });
+  }
   return (
-    <section>
-      <p
-        ref={errRef}
-        className={errMsg ? styles.errmsg : "offscreen"}
-        // className={styles.errMsg}
-        aria-live="assertive"
-      >
-        {errMsg}
-      </p>
-      <h1>Register</h1>
-      <form>
-        <label htmlFor="username">
-          Username:
-          <span className={validName ? "valid" : "hide"}>
-            <FontAwesomeIcon icon={faCheck} />
-          </span>
-          <span className={validName || !user ? "hide" : "invalid"}>
-            <FontAwesomeIcon icon={faTimes} />
-          </span>
-        </label>
-        <input
-          type="text"
-          id="username"
-          ref={userRef}
-          autoComplete="off"
-          onChange={(e) => setUser(e.target.value)}
-          required
-          aria-invalid={validName ? "false" : "true"}
-          aria-describedby="uidnote"
-          onFocus={() => setUserFocus(true)}
-          onBlur={() => setUserFocus(false)}
-        />
-        <p
-          id="uidnote"
-          className={
-            userFocus && user && !validName ? "instructions" : "offscreen"
-          }
-        >
-          <FontAwesomeIcon icon={faInfoCircle} />
-          4 to 24 characters. <br />
-          Must begin with a letter. <br />
-          Letter, number, underscore, hyphense allowed.
-        </p>
-      </form>
-    </section>
+    <div>
+      <div className="top-login">
+        <div className="form-button">
+          <div className="login-form-text">Masz już u nas konto ? </div>
+          <br />
+          <a className="login-button" href="/registertest">
+            ZALOGUJ SIE!
+          </a>
+        </div>
+        <div className="form-button">
+          <div className="login-form-text">
+            Jesteś artystą? Interesujesz się sztuką? A może wbijasz na zakupy?
+          </div>
+          <br />
+          <a className="login-button" href="/login/register">
+            ZAREJESTRUJ SIE !
+          </a>
+        </div>
+      </div>
+      <div className="bottom-login">
+        <form className="login-form">
+          <div className="email-input">
+            <input
+              type="email"
+              id="email"
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email"
+            />
+            {/* <label for="email">Email</label> */}
+          </div>
+          <div className="password-input">
+            <input
+              type="password"
+              id="password"
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+            />
+            {/* <label for="password">Password</label> */}
+          </div>
+          <button className="login-bttn" type="submit" onClick={clickLogin}>
+            Zaloguj sie
+          </button>
+        </form>
+      </div>
+    </div>
   );
 };
 
