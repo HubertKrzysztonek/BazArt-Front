@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Bigelow+Rules&family=Open+Sans:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.event-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+.img-slider {
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 10px;
+  background: #1d212b;
+  .slide {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    img {
+      z-index: 1;
+      width: 100%;
+      border-radius: 5px;
+    }
+    .event-info {
+      position: absolute;
+      top: 0;
+      padding: 15px 30px;
+      h2 {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        font-size: 45px;
+        text-transform: uppercase;
+        font-weight: 800;
+        letter-spacing: 2px;
+      }
+      p {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        font-size: 16px;
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+      }
+    }
+  }
+}
+
+// .img-slider .slide img{
+//     z-index: 1;
+//     width: 100%;
+//     border-radius: 5px;
+// }
