@@ -43,7 +43,8 @@ export default function FooterModal(title) {
             >
               <MDBIcon fab icon="google" />
             </MDBBtn>{" "}
-            Roger <br />
+            Roger witkowski.roger@gmail.com
+            <br />
             <MDBBtn
               floating
               className="m-1"
@@ -63,7 +64,8 @@ export default function FooterModal(title) {
             >
               <MDBIcon fab icon="google" />
             </MDBBtn>{" "}
-            Mateusz <br />
+            Mateusz mateusz.skiba858@gmail.com
+            <br />
             <MDBBtn
               floating
               className="m-1"

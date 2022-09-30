@@ -17,8 +17,6 @@ const ContentDiv = ({ eventId }) => {
       .then((data) => setEvent(data));
   }, []);
 
-  console.log(event);
-
   return (
     <div className="content-div">
       <EventHeaderName eventName={event.name} />

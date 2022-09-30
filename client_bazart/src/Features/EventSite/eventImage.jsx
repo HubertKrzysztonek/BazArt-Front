@@ -2,7 +2,7 @@ import eventLogo from "../../assets/installation.jpg";
 
 const EventImage = ({ imgName }) => {
   // let imgPath = "../images/" + imgName;
-  console.log(imgName);
+
   // let imgPath = "http://picsum.photos/200";
   return (
     <div className="event-image-div">
