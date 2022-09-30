@@ -5,9 +5,9 @@ import "./App.css";
 import ArtistSite from "../../Features/ArtistSite/artistSite";
 import EventPage from "../../Features/EventSite/eventPage";
 import NavigationMain from "../../Features/navigation-main/navigation.main.component";
-
 import Register from "../../Features/RegistrationForm/Register";
 import { AnimatePresence } from "framer-motion";
+import CreateEventDiv from "../../Features/CreateEventSite/CreateEventDiv";
 const App = () => {
   const [categories, setCategory] = useState([]);
 
@@ -24,9 +24,10 @@ const App = () => {
           <Route index element={<HomePage categories={categories} />} />
         </Route>
         <Route path="/event/:eventId" element={<EventPage />}></Route>
+        <Route path="/create-event" element={<CreateEventDiv />}></Route>
         <Route path="/user/:userId" element={<ArtistSite />}></Route>
 
-        <Route path="/registertest" element={<Register />}></Route>
+        <Route path="/login" element={<Register />}></Route>
       </Routes>
     </AnimatePresence>
   );

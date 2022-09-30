@@ -1,4 +1,4 @@
-import eventLogo from "../../assets/eventimage.png";
+import eventLogo from "../../assets/installation.jpg";
 
 const EventImage = ({ imgName }) => {
   // let imgPath = "../images/" + imgName;
